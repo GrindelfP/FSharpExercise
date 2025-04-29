@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpExcercise", "FSharpExcercise.fsproj", "{3E05088D-126B-4FA5-A2B6-EE20E6EBBB93}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpExercise", "FSharpExercise.fsproj", "{3E05088D-126B-4FA5-A2B6-EE20E6EBBB93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -39,7 +39,7 @@ let Integrate (func : double -> double) (a: double) (b: double) (n: int) : doubl
     let h: double = (b - a) / (double)(n - 1)
     let mutable integral: double = 0.0
     for i = 0 to (n - 1) do
-        let xi: double = a + (0.5+ double i) * h
+        let xi: double = a + (0.5 + double i) * h
         integral <- integral + h * (func xi) 
     
     integral
@@ -49,8 +49,6 @@ let Integrate (func : double -> double) (a: double) (b: double) (n: int) : doubl
 /// the result using the `gaussian` function. It then prints the computed value as output.
 let TestIntegrand: unit =
     let x = 0.5
-    let c = 1.0
-    let u = 1.0
        
     let fValue:double = Gaussian x
 

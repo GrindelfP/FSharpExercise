@@ -9,7 +9,7 @@ let main (args:string array) :int =
     
     let left = 0.0
     let right = 1.0
-    let n = 1000000
+    let n = pown 2 23
     
     let mutable stopwatch = Stopwatch.StartNew()
     let myIntegral = Integrate Sinus left right n
