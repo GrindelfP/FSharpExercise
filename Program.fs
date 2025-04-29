@@ -1,2 +1,7 @@
-﻿// For more information see https://aka.ms/fsharp-console-apps
-printfn "Hello from F#"
+﻿module FSharpExercise
+
+let integer:int = 10
+let str:string = integer.ToString()
+printfn $"{str}, {integer}"
+
+let increment x = x + 1
