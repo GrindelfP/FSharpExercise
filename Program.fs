@@ -1,7 +1,24 @@
-﻿module FSharpExercise
+﻿module FSharpExercise.Program
 
-let integer:int = 10
-let str:string = integer.ToString()
-printfn $"{str}, {integer}"
+open FSharpExercise.Integral
+open FSharp.Stats.Integration
+open System.Diagnostics
 
-let increment x = x + 1
+[<EntryPoint>]
+let main (args:string array) :int =
+    
+    let left = 0.0
+    let right = 1.0
+    let n = 1000000
+    
+    let mutable stopwatch = Stopwatch.StartNew()
+    let myIntegral = Integrate Sinus left right n
+    stopwatch.Stop()
+    printfn $"My integral =  {myIntegral}.\nTime elapsed = {stopwatch.Elapsed}"
+    
+    stopwatch <- Stopwatch.StartNew()
+    let libIntegral = Sinus |> NumericalIntegration.definiteIntegral(Midpoint, left, right, n)
+    stopwatch.Stop()
+    printfn $"Lib integral = {libIntegral}.\nTime elapsed = {stopwatch.Elapsed}"
+    
+    0 // Return 0. This indicates success.
