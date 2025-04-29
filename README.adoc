@@ -1,0 +1,7 @@
+= F# Exercise =
+
+== Description ==
+
+This is my first steps in F# programming language. I've got an advice from my professor to try it for Machine Learning as another language with Python as my main Machine Learning language.
+
+Here I would try to do some simple programming, some calculations, some modelling maybe.
